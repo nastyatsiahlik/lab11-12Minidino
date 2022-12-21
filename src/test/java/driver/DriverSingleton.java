@@ -11,7 +11,7 @@ public class DriverSingleton {
 
     private DriverSingleton(){}
 
-    /*public static WebDriver getDriver(){
+    public static WebDriver getDriver(){
 
         if (null == driver){
             switch (System.getProperty("browser")) {
@@ -27,15 +27,15 @@ public class DriverSingleton {
             driver.manage().window().maximize();
         }
         return driver;
-    }*/
-    public static WebDriver getDriver(){
+    }
+    /*public static WebDriver getDriver(){
         if (null == driver){
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
         }
         return driver;
-    }
+    }*/
 
     public static void closeDriver(){
         driver.quit();
