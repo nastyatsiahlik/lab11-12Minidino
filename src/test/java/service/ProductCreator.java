@@ -17,7 +17,7 @@ public class ProductCreator {
     public static  String TESTDATA_TO_HIGHLIGHTS_PRODUCT_URL =  "https://минидино.рф/catalog/odezhda/platya_yubki/yubka_shkola_seraya_kletka/?offer_id=51509";
 
     public static Product productForCart(){
-        return new Product(TESTDATA_TO_CART_PRODUCT_NAME, TestDataReader.getTestData(TESTDATA_TO_CART_PRODUCT_PRICE), TESTDATA_TO_CART_PRODUCT_URL);
+        return new Product(TESTDATA_TO_CART_PRODUCT_NAME,TESTDATA_TO_CART_PRODUCT_PRICE, TESTDATA_TO_CART_PRODUCT_URL);
     }
 
     public static Product productForHighlights(){
