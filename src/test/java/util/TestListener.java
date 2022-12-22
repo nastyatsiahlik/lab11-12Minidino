@@ -41,7 +41,7 @@ public class TestListener implements ITestListener {
                 .getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(screenCapture, new File(
-                    ".//src/screenshots/"
+                    ".//src/test/java/screenshots/"
                             + getCurrentTimeAsString() +
                             ".png"));
         } catch (IOException e) {
