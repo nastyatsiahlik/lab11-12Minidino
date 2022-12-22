@@ -29,8 +29,6 @@ public class MinidinoHomePage extends AbstractPage{
         PageFactory.initElements(driver, this);
     }
 
-    //нужны ли logger
-
     public MinidinoHomePage clickTOSearchIcon(){
         Waits.waitForElementToBeClickable(driver, searchIcon);
         searchIcon.click();

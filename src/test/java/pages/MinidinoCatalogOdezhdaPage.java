@@ -61,7 +61,6 @@ public class MinidinoCatalogOdezhdaPage extends  AbstractPage{
         Waits.waitForElementToBeClickable(driver, ascendingPriceRadio);
         ascendingPriceRadio.click();
         logger.info("ascending price radio pressed");
-      //  Waits.waitForPresenceOfElementLocatedBy(driver, By.cssSelector(categoryDivCss));
         return this;
     }
 
