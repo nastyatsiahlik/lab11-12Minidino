@@ -12,8 +12,7 @@ import util.TestListener;
 @Listeners({TestListener.class})
 public class CommonCondition {
     protected WebDriver driver;
-    ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setBinary("C:\\Users\\tyahl\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+
 
     @BeforeMethod()
     public void setUp() {
