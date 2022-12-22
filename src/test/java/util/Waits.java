@@ -21,12 +21,12 @@ public class Waits {
                 .until(ExpectedConditions.elementToBeClickable(webElement));
     }*/
     public static WebElement waitForPresenceOfElementLocatedBy(WebDriver driver, By by){
-        return new WebDriverWait(driver, Duration.ofMillis(10000))
+        return new WebDriverWait(driver, Duration.ofMillis(20000))
                 .until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
     public static WebElement waitForElementToBeClickable(WebDriver driver, WebElement webElement){
-        return new WebDriverWait(driver, Duration.ofMillis(8000))
+        return new WebDriverWait(driver, Duration.ofMillis(20000))
                 .until(ExpectedConditions.elementToBeClickable(webElement));
     }
 }
