@@ -11,13 +11,15 @@ import org.openqa.selenium.support.PageFactory;
 import util.Waits;
 
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class MinidinoCatalogOdezhdaPage extends  AbstractPage{
 
-    public static String MINIDINO_CATALOG_PAGE_URL = "https://минидино.рф/catalog/odezhda/";
+    public static String CATALOG_PAGE_URL = "https://минидино.рф/catalog/odezhda/";
+    public static  String MINIDINO_CATALOG_PAGE_URL  = StandardCharsets.UTF_8.decode(StandardCharsets.UTF_8.encode(CATALOG_PAGE_URL)).toString();
 
     private final String sortButtonCss = "div#sort";
     private final String ascendingPriceRadioXpath ="//*[@id=\"category-settings\"]/div[1]/div[2]/div/div[2]/div[2]/div";

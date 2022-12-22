@@ -9,9 +9,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import util.Waits;
 
+import java.nio.charset.StandardCharsets;
+
 public class MinidinoHighlightsPage extends AbstractPage{
 
-    public static String MINIDINO_HIGHLIGHTS_PAGE_URL = "https://минидино.рф/favorites/";
+    public static String HIGHLIGHTS_PAGE_URL = "https://минидино.рф/favorites/";
+    public static  String MINIDINO_HIGHLIGHTS_PAGE_URL  = StandardCharsets.UTF_8.decode(StandardCharsets.UTF_8.encode(HIGHLIGHTS_PAGE_URL)).toString();
 
     private final String nameOfProductInHighlightsCss =  "div.category-item-description__title";
     private final String buttonGoToCatalogCss =  "div.favorites__empty>button";

@@ -10,9 +10,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import util.Waits;
 
+import java.nio.charset.StandardCharsets;
+
 public class MinidinoHomePage extends AbstractPage{
 
-    public static String MINIDINO_HOME_PAGE_URL = "https://минидино.рф/";
+    public static String HOME_PAGE_URL = "https://минидино.рф/";
+    public static  String MINIDINO_HOME_PAGE_URL = StandardCharsets.UTF_8.decode(StandardCharsets.UTF_8.encode(HOME_PAGE_URL)).toString();
 
     private final String searchIconClassName = "header-main-menu-search";
     private final String searchInputXpath = "//div[@class='header-main-menu-list']//input[@type = 'search']";

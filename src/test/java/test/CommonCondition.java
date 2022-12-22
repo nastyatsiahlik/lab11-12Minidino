@@ -17,6 +17,7 @@ public class CommonCondition {
     @BeforeMethod()
     public void setUp() {
         driver = DriverSingleton.getDriver();
+        WebDriverManager.chromedriver().setup();
     }
 
     @AfterMethod(alwaysRun = true)

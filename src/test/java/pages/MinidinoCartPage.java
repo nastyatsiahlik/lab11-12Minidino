@@ -8,12 +8,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import util.Waits;
 
+import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 
 
 public class MinidinoCartPage extends AbstractPage{
 
-    public static String MINIDINO_CART_PAGE_URL = "https://минидино.рф/cart";
+    public static String CART_PAGE_URL = "https://минидино.рф/cart";
+    public static  String MINIDINO_CART_PAGE_URL  = StandardCharsets.UTF_8.decode(StandardCharsets.UTF_8.encode(CART_PAGE_URL)).toString();
 
     private final String nameOfProductInCartCss =  "div.basket-item-info__top>a";
     private final String deleteAllButtonCss =  "div.header-cart__link";

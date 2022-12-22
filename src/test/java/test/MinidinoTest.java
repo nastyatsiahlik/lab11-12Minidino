@@ -31,7 +31,7 @@ public class MinidinoTest extends CommonCondition {
     //public static  String SEARCH_QUERY_FOR_AD_PRODUCT_TO_CART = "Купальник слитный Розовый единорог";
 
     //public String minidiniItemUrlForHighlights = "https://минидино.рф/catalog/odezhda/platya_yubki/yubka_shkola_seraya_kletka/?offer_id=51509";
-    //public String minidiniItemUrlForCart = "https://xn--d1ahabqhdi.xn--p1ai/catalog/aksessuary/kupalniki_i_kupalnye_plavki/kupalnik_slitnyy_rozovyy_edinorog_1/?offer_id=22947";
+    //public String minidiniItemUrlForCart = "https://минидино.рф/catalog/aksessuary/kupalniki_i_kupalnye_plavki/kupalnik_slitnyy_rozovyy_edinorog_1/?offer_id=22947";
     //public String minidiniItemUrlForIncreaseCount = "https://минидино.рф/catalog/odezhda/dzhemper_barashek_dzhins/?offer_id=55441";
 
 
