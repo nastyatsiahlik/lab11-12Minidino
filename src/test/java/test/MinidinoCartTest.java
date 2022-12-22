@@ -46,7 +46,7 @@ public class MinidinoCartTest extends CommonCondition {
                 .getEmptyCartMessage();
         assertThat(empty_cart_message, equalTo(cartMessage) );
     }
-/*
+
     @Test(groups = {"NeedAddItemToCart"})
     public void increaseCountOfProductsInCart() {
 
@@ -60,5 +60,5 @@ public class MinidinoCartTest extends CommonCondition {
         int afterPrice = Integer.parseInt(cartPage.getTextOfPriceOfProductInCart());
 
         assertThat(afterPrice, equalTo(priceOfProduct * cartPage.getCountOfProducts()) );
-    }*/
+    }
 }
