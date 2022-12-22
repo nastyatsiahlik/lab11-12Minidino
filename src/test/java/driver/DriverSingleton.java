@@ -10,7 +10,7 @@ public class DriverSingleton {
     private static WebDriver driver;
 
     private DriverSingleton(){}
-
+/*
     public static WebDriver getDriver(){
 
         if (driver == null){
@@ -27,15 +27,15 @@ public class DriverSingleton {
             driver.manage().window().maximize();
         }
         return driver;
-    }
-    /*public static WebDriver getDriver(){
+    }*/
+    public static WebDriver getDriver(){
         if (null == driver){
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
         }
         return driver;
-    }*/
+    }
 
     public static void closeDriver(){
         driver.quit();
